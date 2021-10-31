@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       50b46a73-7b40-4ae9-8aa7-a04823c07df7
+:END:
+#+title: ormolu.el
+#+category: ormolu.el
+#+filetags: project agenda
+* Goals
+
+** TODO Add project goals
+
+* Tasks
+
+** TODO Add initial tasks
+
+* Dates

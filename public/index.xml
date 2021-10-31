@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vasiliy&#39;s Braindump</title>
+    <link>https://braindump.badykov.com/</link>
+    <description>Recent content on Vasiliy&#39;s Braindump</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://braindump.badykov.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>emacs</title>
+      <link>https://braindump.badykov.com/posts/20211031155131-emacs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://braindump.badykov.com/posts/20211031155131-emacs/</guid>
+      <description>Packages  org-roam     </description>
+    </item>
+    
+    <item>
+      <title>Finance</title>
+      <link>https://braindump.badykov.com/posts/20211031214428-finance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://braindump.badykov.com/posts/20211031214428-finance/</guid>
+      <description>Russian finance monitoring   </description>
+    </item>
+    
+    <item>
+      <title>org-roam</title>
+      <link>https://braindump.badykov.com/posts/20211031155808-org_roam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://braindump.badykov.com/posts/20211031155808-org_roam/</guid>
+      <description>The shortcuts I use most often:
+ SPC+n+f - find or create a new node SPC+n+i - insert a link  </description>
+    </item>
+    
+    <item>
+      <title>ormolu.el</title>
+      <link>https://braindump.badykov.com/posts/20211031200747-ormolu_el/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://braindump.badykov.com/posts/20211031200747-ormolu_el/</guid>
+      <description>Goals TODOAdd project goals Tasks TODOAdd initial tasks Dates </description>
+    </item>
+    
+    <item>
+      <title>polkadot</title>
+      <link>https://braindump.badykov.com/posts/20211031154915-polkadot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://braindump.badykov.com/posts/20211031154915-polkadot/</guid>
+      <description>Something about polkadot.</description>
+    </item>
+    
+    <item>
+      <title>Polkadot Staking</title>
+      <link>https://braindump.badykov.com/posts/20211031183902-polkadot_staking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://braindump.badykov.com/posts/20211031183902-polkadot_staking/</guid>
+      <description>Goals Test validator slashing Test nominator slashing Secure validator infrastructure Tasks TODORun a private network with multiple validator nodes Dates </description>
+    </item>
+    
+    <item>
+      <title>Russian finance monitoring</title>
+      <link>https://braindump.badykov.com/posts/20211031221219-russian_finance_monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://braindump.badykov.com/posts/20211031221219-russian_finance_monitoring/</guid>
+      <description>Мониторинг банковских карт физ. лиц  &amp;ldquo;Подозрительно бедные&amp;rdquo; Правило нулевого дохода (проверка соответствия &amp;ldquo;белых&amp;rdquo; доходов и стоимости имущества). Пока будут проверяться только граждане, подающие заявки на пособия  Рекомендации ЦБ Под подозрение и потенциальную блокировку попадают:
+ &amp;ldquo;Необычно&amp;rdquo; большое кол-во переводов  &amp;gt;=10 в день &amp;gt;=50 в месяц &amp;gt;30 операций в день по зачислению или списанию   Переводы между физлицами на крупные суммы  От 100 тыс в день Более 1 млн в месяц   Между операциями по зачислению и списанию проходит мало времени  Автоматизированные переводы: Меньше 1 минуты (роботизированные) Ручные переводы: В течение 12 часов суток проводятся операции по зачислению списанию средств Это происходит на регулярной основе (в пределах 1 недели)   В течении недели средний остаток на счёте на конец дня не превышает 10% от среднедневного объёма операций по счёту Разные люди совершают переводы с использованием одного устройства  Система финансовых рейтингов физ.</description>
+    </item>
+    
+    <item>
+      <title>Vasiliy&#39;s Braindump</title>
+      <link>https://braindump.badykov.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://braindump.badykov.com/about/</guid>
+      <description>Hi! My name is Vasiliy   . Here you can find my notes, links and references.
+Note that this is a WIP.
+Notes are short and heavily inter-connected. Start wherever and go deeper. When navigating, press Esc to close the last frame.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5f7b4f20-83a7-4f8b-b478-81c05ac4ceeb
+:END:
+#+title: Finance
+
+* [[id:004cec49-9171-4878-b141-6ddd05fd4d72][Russian finance monitoring]]
