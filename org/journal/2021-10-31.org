@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       5cea42fa-b063-4d77-85c3-2ed816f87a71
+:END:
+#+title: 2021-10-31
+* Configuring[[id:3bef3794-9b0d-4a04-b78e-887737af28d0][ org-roam]]
+* Researching the Zettelkasten method
+* TODO Try adding a validator with custom keys

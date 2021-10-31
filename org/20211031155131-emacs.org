@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       851b4f14-2bfc-4c53-b257-023015bd7025
+:END:
+#+title: emacs
+
+* Packages
+:PROPERTIES:
+:ID:       d26915dc-f097-4040-b935-f4eca57ef4be
+:ROAM_ALIASES: "Emacs Packages"
+:END:
+
+- [[id:3bef3794-9b0d-4a04-b78e-887737af28d0][org-roam]]
+-

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       3bef3794-9b0d-4a04-b78e-887737af28d0
+:END:
+#+title: org-roam
+
+The shortcuts I use most often:
+
+- ~SPC+n+f~ - find or create a new node
+- ~SPC+n+i~ - insert a link

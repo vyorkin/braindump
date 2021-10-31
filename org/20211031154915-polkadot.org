@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a88b4099-99a5-4278-a0c8-a1fb747e90a5
+:END:
+#+title: polkadot
+
+Something about polkadot.

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       f79c4d87-d936-46ae-9c9c-88a2de86d43c
+:END:
+#+title: 2021-10-30
+* NixOS config
+** Fix Picom (compton), make it work
+*** Craft a better picom config
+** Increase screen idle timeout
+
+#+begin_src
+# Never turn off screen
+exec_always xset s off
+exec_always xset -dpms
+exec_always xset s noblank
+#+end_src

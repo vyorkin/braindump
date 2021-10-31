@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       ef92880a-0ab8-42d0-a443-f03279ef2061
+:END:
+#+title: Polkadot Staking
+#+category: Polkadot Staking
+#+filetags: project, agenda
+* Goals
+
+** Test validator slashing
+** Test nominator slashing
+** Secure validator infrastructure
+
+* Tasks
+
+** TODO Run a private network with multiple validator nodes
+
+* Dates

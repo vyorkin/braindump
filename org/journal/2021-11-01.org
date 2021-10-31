@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       2034d197-1797-4b23-a880-be3665a213bd
+:END:
+#+title: 2021-11-01
+* Make sure the sampler UI works
+* Private Polkadot network setup with custom validators
+** Generate own keys and register additional validators
+** Ensure they would be elected into the active validator set
+** Think about ways to automate the process with polka-runner
+*** Keys generation
+*** Registration as validators

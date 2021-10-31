@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b6c7eb87-1f66-4ac7-bafc-bc80b68bb9ae
+:END:
+#+title: 2021-11-13
+
+* Check if she is going to arrive at a time
+* Find out the exact date of arrival
+* Ask for a day-off at that date
