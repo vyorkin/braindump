@@ -1,0 +1,12 @@
+baseURL = "https://braindump.badykov.com/"
+languageCode = "en-us"
+title = "Vasiliy's Braindump"
+theme = "cortex-dark"
+pygmentsStyle = "dracula"
+
+[params]
+  email = "vasiliy.yorkin@gmail.com"
+  footer = "Icon by Freepik. Built with ♥ with Org-mode and Hugo."
+  entrypoint = "/about"
+  repo = "https://github.com/vyorkin/braindump"
+  copyright = "Copyright © 2021+ Vasiliy Yorkin "
