@@ -3,9 +3,13 @@
 :END:
 #+title: 2021-11-01
 * Make sure the sampler UI works
+
+- [ ] Attempt to swap something
+
 * Private Polkadot network setup with custom validators
 ** Generate own keys and register additional validators
 ** Ensure they would be elected into the active validator set
 ** Think about ways to automate the process with polka-runner
 *** Keys generation
 *** Registration as validators
+* Journal

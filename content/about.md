@@ -14,4 +14,3 @@ Note that this is a WIP.
 
 Notes are short and heavily inter-connected.
 Start wherever and go deeper. Here is the [full index](/posts/).
-When navigating, press Esc to close the last frame.
