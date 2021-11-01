@@ -1,3 +1,6 @@
 [submodule "themes/cortex-dark"]
 	path = themes/cortex-dark
 	url = https://github.com/ayrat555/cortex-dark
+[submodule "public"]
+	path = public
+	url = git@github.com:vyorkin/braindump-public.git
