@@ -2,6 +2,7 @@
 :ID:       2034d197-1797-4b23-a880-be3665a213bd
 :END:
 #+title: 2021-11-01
+
 * Make sure the sampler UI works
 
 - [ ] Attempt to swap something
@@ -12,4 +13,29 @@
 ** Think about ways to automate the process with polka-runner
 *** Keys generation
 *** Registration as validators
-* Journal
+* polka-runner
+- [ ] Make node-key and bootnodes optional
+* infrastructure
+- [ ] There are no ~--rpc-port~ and ~--ws-port~ parameters
+- [ ] Make sure RPC & WS connections work without them
+- [ ] Use ~+N~ for port numbers in tf services
+
+  #+begin_src terraform
+  hostPort : local.node_p2p_port + 1
+  #+end_src
+
+  Example:
+  #+begin_src terraform
+  name = "${var.vm_name_prefix}${count.index + 1}"
+  #+end_src
+
+- [ ] Learn terraform loops, maps, collections, etc
+- [ ] DRY infra
+
+** 22:45 Picom eats CPU, try alternative backend?
+** 22:46 Sometimes Emacs eats up to 100% CPU
+
+- [ ] Run the profiler
+- [ ] Is this related to ~org-level~'s?
+- [ ] New ~org-ellipsis~?
+- [ ] What other changes could affect this?

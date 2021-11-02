@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       d0768deb-dc1e-4fb0-892e-5289e3fa3d68
+:END:
+#+title: Polkadot Secure Validator

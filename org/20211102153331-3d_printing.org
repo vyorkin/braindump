@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       908feca4-e0e5-492f-b23a-bb88d754245c
+:END:
+#+title: 3D Printing
+
+* FDM
+
+FlashForge Guider 2
+ https://market.yandex.ru/product--3d-printer-flashforge-guider-ii/1451135129?clid=1603&sku=101465488124&cpa=1
+
+FlyingBear Ghost
+  - [[https://aliexpress.ru/item/1005003318658033.html?_randl_currency=RUB&_randl_shipto=RU&acnt=8328693066&aff_platform=jvru&aff_short_key=brxT3bLh&albad=513264790239&albag=120042545185&albagn=ic&albch=dspl&albcp=12711254763&albkwd=pla-1226348830949&campaignName=JVRU_IC_ALI_WEBall_RU_UA_sTrade_ROAS_AFFC0_Perform&cn=12711254763&dp=Cj0KCQjww4OMBhCUARIsAILndv7dl9PRdWtVyFjWFR58-XwEI5rC42Vac31Ko8y-bxPKjTmeSRtyU2EaApVLEALw_wcB&feed_id=191&gclid=Cj0KCQjww4OMBhCUARIsAILndv7dl9PRdWtVyFjWFR58-XwEI5rC42Vac31Ko8y-bxPKjTmeSRtyU2EaApVLEALw_wcB&isdl=y&netw=u&sellermenu_hide=true&sku_id=12000025185993326&src=googleweb&tracelog=googleweb_jvru_ic_12711254763&utm_campaign=JVRU_IC_ALI_WEBall_RU_UA_sTrade_ROAS_AFFC0_Perform&utm_medium=cpc&utm_source=google][aliexpress]]
+
+  - [[https://www.ozon.ru/product/3d-printer-flyingbear-ghost-5-191619881/?hs=1&sh=VgLNLfM2][ozon]]
+
+
+** Accessories
+
+- Сверла для чистки сопел под диаметр (феломент часто забивает сопла)
+- Сопло на замену (может выйти из строя)
+- Набор скобяных инструментов, чтобы отделять модель от стола
+  (шпатель или что-то похожее)
+- Зажимы
+- Лак "прелесть" (наглухо клеит модель к столу)
+
+* SLA
+* SLS
+
+
+* Thingversion
+
+https://www.thingiverse.com/thing:4924147
