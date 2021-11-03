@@ -1,0 +1,108 @@
+:PROPERTIES:
+:ID:       79ce7e14-8fba-45e2-ac71-7b92102acff0
+:END:
+#+title: Substrate custom tokens
+
+* Overview
+
+There are a few ways to launch a token with Substrate.
+
+- [[https://paritytech.github.io/substrate/master/pallet_balances/index.html][pallet_balances]]
+- [[https://paritytech.github.io/substrate/master/pallet_assets/index.html][pallet_assets]]
+- ?
+
+* Balances Pallet
+** Overview
+
+Manages a single finguble token, handles accounts and their balances.
+
+** Initial balances
+
+Supplying initial balances with a genesis config:
+
+#+begin_src rust
+pub fn genesis_config(...) -> GenesisConfig {
+    // ...
+    GenesisConfig {
+        // ...
+        balances: runtime::BalancesConfig {
+            balances: vec![
+                // (AccountId, Balance)
+                // ...
+            ],
+        },
+        // ...
+    }
+}
+#+end_src
+
+** Transaction fees
+
+Normally, transaction fees are paid with this pallet's accounts.
+
+#+begin_src
+fee = base_fee + byte_fee * length + weight_fee
+#+end_src
+
+*** Details
+
+This is implemented in the [[https://paritytech.github.io/substrate/master/pallet_transaction_payment/index.html][pallet_transaction_payment]] and could
+be configured in the Runtime like this:
+
+#+begin_src rust
+parameter_types! {
+    // Per-byte fee.
+    pub const TransactionByteFee: u128 = 1 * MICRO_LUN;
+
+    // Fee multiplier for operational extrinsics.
+    pub const OperationalFeeMultiplier: u8 = 5;
+}
+
+impl pallet_transaction_payment::Config for Runtime {
+    // Handler for withdrawing, refunding and depositing the transaction fee.
+    // Transaction fees are withdrawn before the transaction is executed.
+    // After the transaction was executed the transaction weight can be
+    // adjusted, depending on the used resources by the transaction. If the
+    // transaction weight is lower than expected, parts of the transaction fee
+    // might be refunded. In the end the fees can be deposited.
+    //
+    // Basically, here we're saying that we want to charge fees from balances pallet.
+    type OnChargeTransaction = pallet_transaction_payment::CurrencyAdapter<Balances, ()>;
+
+    // The fee to be paid for making a transaction; the per-byte portion.
+    type TransactionByteFee = TransactionByteFee;
+
+    // Convert a weight value into a deductible fee based on the currency type.
+    type WeightToFee = IdentityFee<Balance>;
+
+    // Update the multiplier of the next block, based on the previous block's weight.
+    type FeeMultiplierUpdate = ();
+
+    // A fee mulitplier for `Operational` extrinsics to
+    // compute "virtual tip" to boost their `priority`.
+    type OperationalFeeMultiplier = OperationalFeeMultiplier;
+}
+#+end_src
+
+* Assets Pallet
+
+Allows to have multiple fungible tokens. Provides a simple asset
+management functinality, without extra features like locking.
+
+You can manage assets with the Polkadot UI -- there is an
+=Assets= menu item (under =Network=).
+
+** Observations
+
+1. Looks like craation of assets and transfering works from the
+   UI
+2. Calling ~transfer~ or ~transferKeepAlive~ from the extrinsics
+   panel doesn't change the ~assets.balances~ state.
+3. I'm unable to explore the related event internals due to
+   [[https://github.com/polkadot-js/apps/issues/6468][polkadot
+   UI bug]]
+
+* References
+
+- [[https://www.youtube.com/watch?v=7qkqEfToH8w&ab_channel=ParityTechnologies][Six ways to launch a token on Substrate]] (youtube video)
+  - There is no ~GenericAsset~ in =substrate > 2.x= anymore

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       da21aa2d-900b-4a7b-b37b-1ae41883a3b9
+:END:
+#+title: 2021-11-03
+* Journal
+** TODO 01:04 Add presient + ivy-prescient
+** TODO 01:54 Setup dap for Emacs
+SCHEDULED: <2021-11-05 Fri>
