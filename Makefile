@@ -21,6 +21,7 @@ publish:
 .PHONY: build
 build:
 	./build.py
+	hugo
 
 # .PHONY: build
 # build:
