@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       ddb675ca-bcd2-4065-a524-e2995eea83a9
+:END:
+#+title: Shell runtime
+
+Its purpose is to provide a minimal runtime of a parachain that
+will later be exchanged by a runtime upgrade with the real
+parachain runtime.

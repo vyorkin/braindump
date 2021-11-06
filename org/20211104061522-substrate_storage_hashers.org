@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       8af87f83-9cf5-4538-b2a7-d2ec2e5d24c4
+:END:
+#+title: Substrate storage hashers
+
+* =blake2_128_concat=
+
+Cryptographically secure hash function.
+
+Choose this hasher if users of your chain have the ability to
+affect the storage keys.
+
+* =twox_64_concat=
+
+Not cryptographically secure, but is more efficient than =blake2=.
+You should not use this hasher if chain users can affect the storage key.
+However, it is perfectly safe to use this hasher to gain performance in scenarios where the users do not control the keys.
+
+* =identity=
+
+Identity function that returns the same value it receives. This
+hasher is only an option when the key type in your storage map
+is already a hash, and is not controllable by the user.
