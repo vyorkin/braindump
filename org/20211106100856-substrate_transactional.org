@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       a1bb782a-6691-41ef-b4dc-e90fd9db34b9
+:END:
+#+title: Substrate transactional
+
+#+begin_src rust
+#[transactional]
+fn foo() {
+}
+#+end_src
+
+Allows us to write dispatchable functions that commit changes to the storage only if the annotated function returns Ok. Otherwise all changes are discarded.
