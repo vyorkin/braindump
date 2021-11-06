@@ -103,13 +103,12 @@ You can manage assets with the Polkadot UI -- there is an
 
 ### Observations {#observations}
 
-1.  Looks like craation of assets and transfering works from the
+1.  Looks like creation of assets and transfering works from the
     UI
 2.  Calling `transfer` or `transferKeepAlive` from the extrinsics
     panel doesn't change the `assets.balances` state.
 3.  I'm unable to explore the related event internals due to
-    [polkadot
-    UI bug](https://github.com/polkadot-js/apps/issues/6468)
+    [polkadot UI bug](https://github.com/polkadot-js/apps/issues/6468)
 
 
 ## References {#references}
