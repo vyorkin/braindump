@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       69fca639-74da-443e-bd59-1a9f580fa7cf
+:END:
+#+title: Substrate imbalance
+
+Source: https://blog.polymath.network/substrate-deep-dive-imbalances-8dfa89cc1d1
+
+* Overview
+
+An Imbalance represents the difference between total issuance
+stored in the variable in the balances module and the actual
+total supply of the native currency in Substrate.
+
+#+begin_src
+TotalSupply = TotalIssuance - Imbalance
+<=>
+Imbalance = TotalIssuance - TotalSupply
+#+end_src
+
+*Total Issuance* -- sum of all _minted_ tokens.
+
+*Total Supply* -- number of tokens that currently exists and are
+either in circulation or locked somehow.
+
+*Burning* or *minting* tokens does not affect anyone’s balance.
+It only changes the =TotalIssuance= and returns an =Imbalance=.
+
+The =Imbalance= can then be “handled” by the system in many ways.
+The system may increase/decrease multiple user’s balances by
+using that imbalance or simply reverse the change in total
+issuance. For example, when someone is charged the transaction
+fee, their balance is reduced but total issuance is not changed
+and that gives us an imbalance. The system then splits that
+imbalance to deposit some tokens into the treasury’s account and
+some in the validator’s account. Once the deposit is complete,
+the sum of all balances again becomes equal to total issuance.
+
+- *Positive Imbalance* will increase total issuance when dropped
+- *Negative Imbalance* will decrease total issuance when dropped.
+
+* PositiveImbalance
+
+~TotalSupply > TotalIssuance~
+
+*Cases*:
+- Burn tokens
+- Deposit (increase balance without increasing total issuance)
+
+* NegativeImbalance
+
+~TotalSupply < TotalIssuance~
+
+*Cases*:
+- Mint tokens
+- Withdraw (decrease balance without increasing total issuance)
+
+* Handling
+
+It is not always required to handle imbalances manually.
+Imbalances implement the ~Drop~ trait.
+
+Substrate by default:
+
+- *increases* ~TotalIssuance~ when ~PositiveImbalance~ is dropped
+- *decreases* ~TotalIssuance~ when ~NegativeImbalance~ is dropped
+
+So that ~TotalIssuance = TotalSupply~ again.
+
+If you just need to increase/decrease the total issuance, you do
+not need to handle the ~Imbalance~. For example, if you want to
+burn someone’s balance, you should call the withdraw function
+and just ignore the ~Imbalance~:
+
+#+begin_src rust
+let _= withdraw();
+#+end_src
+
+Under the hood, the withdraw function will generate a
+~NegativeImbalance~ and return it to you. An important thing to
+note is that at this moment, the total issuance is not equal to
+the total supply in the system. Once ~_~ goes out of scope
+(usually when you exit the current code block), the ~drop~
+function in the ~NegativeImbalance~ will be called and the total
+issuance will get reduced to make it equal to the total supply.

@@ -3,6 +3,9 @@
 :END:
 #+title: 2021-11-13
 
-* Check if she is going to arrive at a time
-* Find out the exact date of arrival
-* Ask for a day-off at that date
+* DONE Check if she is going to arrive at a time
+CLOSED: [2021-12-15 Wed 19:48]
+* DONE Find out the exact date of arrival
+CLOSED: [2021-12-15 Wed 19:48]
+* DONE Ask for a day-off at that date
+CLOSED: [2021-12-15 Wed 19:48]

@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       6cf29bf8-93c9-45ce-b59c-5bc1cbb00cb1
+:END:
+#+title: Polkadot Bridges
+
+* InterBTC (aka PolkaBTC) by Interlay
+
+[[https://bridge.interlay.io/bridge?tab=issue][InterBTC bridge]] is a decentralized bridge based on the [[https://www.xclaim.io/][XCLAIM]]
+protocol. The corresponding assets are 1:1 bitcoin-backed. There
+are actually two bridges:
+
+- BTC ↔ Polkadot (WIP)
+- BTC ↔ Kusama [[https://kintsugi.interlay.io/][Kintsugi]]
+
+To mint interBTC, users lock BTC with custodians (vaults).
+Vaults are not trusted. They must lock collateral in various
+assets, such as DAI, DOT, USDC, with the interBTC bridge (the
+Interlay parachain on Polkadot). If a Vault steals or loses BTC,
+their collateral is slashed — and users reimbursed.
+
+** Kintsugi
+
+[[https://kintsugi.interlay.io/][Kintsugi]] is the canary network (parachain) on Kusama.
+
+** References
+
+- [[https://bridge.interlay.io/bridge?tab=issue][InterBTC (aka PolkaBTC)]] (UI, testnet)
+- [[https://www.youtube.com/watch?v=gS4sq1SpBps&ab_channel=Polkadot][PolkaBTC aka InterBTC]] (youtube video)
+- [[https://docs.interlay.io/#/start/prereq][InterBTC developer docs]]
+- [[https://twitter.com/inter_btc][InterBTC twitter]]
+- [[https://medium.com/interlay/the-future-of-bridging-assets-837998115f6b][The future of interoperability]] (post on Interlay blog) — InterBTC bridge overview
+- [[https://kintsugi.interlay.io/][Kintsugi]] (InterBTC canary network) — parachain on Kusama
+- [[https://twitter.com/kintsugi_btc][KintsugiBTC twitter]]
+- [[https://medium.com/interlay/kintsugi-launch-roadmap-the-path-to-bitcoin-on-kusama-c2c6aa528f7][Kintsugi Launch Roadmap: The Path to Bitcoin on Kusama]] (post on Interlay Medium)
+- [[https://medium.com/interlay/kintsugi-wins-parachain-slot-11-bitcoin-is-coming-to-kusama-ef082eaa9b86][Kintsugi Wins Parachain Slot 11 — Bitcoin is Coming to Kusama]]
+
+* Snowbridge by Snowfork
+
+[[https://github.com/Snowfork/snowbridge][Snowbridge]] is a general purpose, trustless and decentralized
+bridge between Polkadot and Ethereum. It will enable not only
+ETH to be transferred from Ethereum to Polkadot, but also ERC20
+assets and arbitrary data. Beyond asset transfer, the bridge can
+be used for much more sophisticated interactions such as
+cross-chain smart contract calls.
+
+- [[https://snowbridge.snowfork.com/][Snowfork bridge]] (Snowbridge)
+- [[https://snowbridge-docs.snowfork.com/][Snowfork architecture & design docs]]
+- [[https://github.com/Snowfork/snowbridge][Snowfork GitHub]]
+- [[https://www.youtube.com/watch?v=1lutDZKbT2Q&ab_channel=Polkadot][Substrate-to-Substrate Bridge Design Deep-Dive and Internal Audit]] (youtube video)
